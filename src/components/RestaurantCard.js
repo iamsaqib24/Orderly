@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
-function RestaurantCard({
+export default function RestaurantCard({
   cloudinaryImageId,
   name,
   avgRating,
@@ -51,5 +51,3 @@ function RestaurantCard({
     </div>
   );
 }
-
-export default RestaurantCard;
