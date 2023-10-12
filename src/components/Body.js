@@ -38,7 +38,7 @@ export default function Body() {
         </div>
       ) : (
         <>
-          <div className="text-center p-8  bg-orange-500">
+          <div className="text-center p-8  bg-slate-900">
             <input
               type="text"
               placeholder="Search for restaurant"

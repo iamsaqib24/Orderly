@@ -6,12 +6,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Body from "./components/Body";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
       <Body />
+      <Footer />
     </>
   );
 }
