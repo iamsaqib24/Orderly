@@ -1,10 +1,39 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Body from "./components/Body";
+import Cart from "./components/Cart";
 
 function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Body />
+    </>
+  );
 }
 
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<RouterProvider router={appRouter} />);
