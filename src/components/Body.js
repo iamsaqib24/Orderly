@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import { SWIGGY_LIVE_API } from "../utils/constants";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import filterDataUsingRestaurantName from "../utils/Helper";
 
 export default function Body() {
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -16,6 +19,9 @@ export default function Body() {
     // console.log(json);
 
     setListOfRestraunt(
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setFilteredRestaurants(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   }
@@ -32,15 +38,30 @@ export default function Body() {
         </div>
       ) : (
         <>
-          {/* <div className="flex align-middle justify-center">
-            <SearchBar
-              setFilteredRestaurants={setFilteredRestaurants}
-              restaurants={restaurants}
-              numberOfRestaurants={restaurantNumber}
+          <div className="text-center p-8  bg-orange-500">
+            <input
+              type="text"
+              placeholder="Search for restaurant"
+              className="border border-gray-400 p-3 h-10 mt-2 mb-2 w-2/5 outline-none"
+              value={searchInput}
+              onChange={(e) => {
+                setSearchInput(e.target.value);
+                if (searchInput == "") {
+                  setFilteredRestaurants(listOfRestaurants);
+                } else {
+                  setFilteredRestaurants(
+                    filterDataUsingRestaurantName(
+                      e.target.value,
+                      listOfRestaurants
+                    )
+                  );
+                }
+              }}
             />
-          </div> */}
+          </div>
+
           <div className="flex flex-wrap align-middle justify-center self-stretch">
-            {listOfRestaurants.map((restaurant) => (
+            {filteredRestaurants.map((restaurant) => (
               <RestaurantCard key={restaurant.info.id} {...restaurant.info} />
             ))}
           </div>
