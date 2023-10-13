@@ -8,13 +8,18 @@ import Body from "./components/Body";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 function App() {
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <Provider store={store}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </Provider>
     </>
   );
 }
@@ -28,6 +33,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/restaurant/:id",
+        element: <RestaurantMenu />,
       },
       {
         path: "/about",

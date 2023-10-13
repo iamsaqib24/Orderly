@@ -3,6 +3,7 @@ import { SWIGGY_LIVE_API } from "../utils/constants";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import filterDataUsingRestaurantName from "../utils/Helper";
+import { Link } from "react-router-dom";
 
 export default function Body() {
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
@@ -61,8 +62,20 @@ export default function Body() {
           </div>
 
           <div className="flex flex-wrap align-middle justify-center self-stretch">
-            {filteredRestaurants.map((restaurant) => (
+            {/* {filteredRestaurants.map((restaurant) => (
               <RestaurantCard key={restaurant.info.id} {...restaurant.info} />
+            ))} */}
+            {filteredRestaurants.map((restaurant) => (
+              <Link
+                key={restaurant.info.id}
+                to={"/restaurant/" + restaurant.info.id}
+              >
+                {" "}
+                <RestaurantCard
+                  key={restaurant.info.id}
+                  {...restaurant.info}
+                />{" "}
+              </Link>
             ))}
           </div>
         </>
