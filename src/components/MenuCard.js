@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constants";
 
-const MenuCard = ({ ItemDetails }) => {
+function MenuCard({ ItemDetails }) {
   const { imageId, name, defaultPrice, price, description, itemAttribute } =
     ItemDetails;
-  console.log(imageId);
+  // console.log(imageId);
   // console.log(name)
   //adding for cart
   const dispatch = useDispatch();
@@ -15,7 +15,6 @@ const MenuCard = ({ ItemDetails }) => {
   };
   return (
     <div>
-      {/* <h1>{name}</h1> */}
       <div className="flex justify-between">
         <div>
           <div>
@@ -53,6 +52,6 @@ const MenuCard = ({ ItemDetails }) => {
       <div className="border-b my-5"></div>
     </div>
   );
-};
+}
 
 export default MenuCard;

@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { CDN_URL } from "../utils/constants";
 import { addItem, clearCart, decreamentItem } from "../utils/cartSlice";
-import { Link } from "react-router-dom";
 
 function FoodItem() {
   const cartItems = useSelector((store) => store.cart.items);
@@ -30,8 +29,6 @@ function FoodItem() {
   const handleClearCart = () => {
     disptach(clearCart());
   };
-
-  // const url = useLocation();
 
   return (
     <div className="w-100% sm:h-[calc(100vh-80px)] flex md:items-center flex-col justify-center my-0 mx-auto md:text-center">
@@ -89,13 +86,6 @@ function FoodItem() {
           <span className="text-xl">Total</span>
           <span className="text-xl">&#8377;{(getTotal() + 0.0) / 100}</span>
         </div>
-        {/* {url.pathname !== "/checkout" && (
-        <Link to={"/checkout"}>
-        <button className="font-poppins bg-slate-900 mt-4 p-2 text-white w-full">
-        Checkout
-          </button>
-        </Link>
-      )} */}
       </div>
     </div>
   );

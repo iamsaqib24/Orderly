@@ -56,12 +56,10 @@ function RestaurantMenu() {
       <div className="my-0 mx-4 ">
         <div className="pt-4 mb-4 flex justify-between">
           <div className="mr-4 inline-block">
-            {/* <h1>Restraunt id: {resId}</h1> */}
             <h1 className="text-xl font-bold mb-2 text-[#282c3f] capitalize">
               {restaurantInfo.name}
             </h1>
 
-            {/* <img src={IMG_CDN_URL + restaurantInfo.cloudinaryImageId} alt="food-image" /> */}
             <p className="text-sm text-[#93959f] ">
               {restaurantInfo?.cuisines.join(", ")}
             </p>
@@ -133,17 +131,10 @@ function RestaurantMenu() {
           <p>Flat 20 % off</p>
           <p>20% off upto Rs 100</p>
         </div>
-        {/* <div>
-          Veg Only
-        </div> */}
       </div>
 
-      <div>
-        {/* {console.log(restaurantMenu[1].card.card)}
-        <MenuCard menu={restaurantMenu[1].card.card} /> */}
-      </div>
+      <div></div>
       <div className="p-5">
-        {/* <h1>Restaurants</h1> */}
         <ul data-testid="menu">
           {restaurantMenu.map((item, index) => {
             if (item.card.card.title) {
