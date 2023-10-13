@@ -2,10 +2,10 @@ export const CDN_URL =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
 export const SWIGGY_LIVE_API =
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.3496597&lng=75.5937967&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.3496597&lng=75.5937967&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const FETCH_MENU_URL =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.3496597&lng=75.5937967&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.3496597&lng=75.5937967&restaurantId=";
 
 export const FETCH_MENU_URL_MOBILE =
   "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.3496597&lng=75.5937967&submitAction=ENTER&restaurantId=283662";
@@ -29,7 +29,7 @@ export const DEFAULT_DATA_URL =
   "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
 
 export const MENU_URL =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.3174112&lng=82.9738892&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.3174112&lng=82.9738892&restaurantId=";
 
 export const FAQ = [
   {
