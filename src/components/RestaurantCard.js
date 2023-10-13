@@ -1,4 +1,5 @@
 import { CDN_URL } from "../utils/constants";
+import { BsFillStarFill } from "react-icons/bs";
 
 export default function RestaurantCard({
   cloudinaryImageId,
@@ -28,7 +29,8 @@ export default function RestaurantCard({
               : "flex font-thin mt-[0.5rem] mr-4 text-zinc-700"
           }
         >
-          {avgRating} stars
+          <BsFillStarFill className=" mx-1 my-1" />{" "}
+          {isNaN(avgRating) ? "--" : avgRating}
         </h4>
         <div className="font-semibold text-slate-800 text-xs">
           {costForTwo !== "" ? (
@@ -46,8 +48,6 @@ export default function RestaurantCard({
           &nbsp;&nbsp;{sla.slaString}
         </div>
       </div>
-      {/* <h4 className="font-semibold text-slate-800 text-xs">{costForTwo}</h4>
-      <h4 className="font-semibold text-slate-800 text-xs">{sla.slaString}</h4> */}
     </div>
   );
 }
