@@ -10,17 +10,19 @@ Check out the live demo of Orderly [here](https://orderly-eta.vercel.app/).
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
-- **Restaurant Search:** Users can search for restaurants based on location, cuisine, or restaurant name.
-- **Menu Preview:** View restaurant menus, prices, and available dishes.
-- **Order Placement:** Users can add items to their cart, specify delivery details, and place orders.
-- **Shimmer UI:** The app uses a Shimmer UI to provide a smooth loading experience.
-- **Real-time Data:** Restaurant data is fetched using Swiggy's live API for up-to-date information.
+- **Restaurant Search:**
+  Users can search for restaurants based on location, cuisine, or restaurant name.
+- **Menu Preview:**
+  View restaurant menus, prices, and available dishes.
+- **Order Placement:**
+  Users can add items to their cart, specify delivery details, and place orders.
+- **Shimmer UI:**
+  The app uses a Shimmer UI to provide a smooth loading experience.
+- **Real-time Data:**
+  Restaurant data is fetched using Swiggy's live API for up-to-date information.
 
 ## Technologies
 
@@ -32,12 +34,12 @@ Check out the live demo of Orderly [here](https://orderly-eta.vercel.app/).
 
 ## Demo
 
-![image](src/assets/:.png)
-![image](src/assets/shimmer.png)
-![image](src/assets/searchQuery.png)
-![image](src/assets/restaurantMenu.png)
-![image](src/assets/cart.png)
-![image](src/assets/about.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/home.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/restaurantMenu.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/cart.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/searchQuery.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/shimmer.png)
+![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/about.png)
 
 ## Getting Started
 
