@@ -34,12 +34,12 @@ Check out the live demo of Orderly [here](https://orderly-eta.vercel.app/).
 
 ## Demo
 
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/home.png)
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/restaurantMenu.png)
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/cart.png)
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/searchQuery.png)
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/shimmer.png)
-![image](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/about.png)
+![all-restaurants-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/home.png?raw=true)
+![restaurant-menu-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/restaurantMenu.png?raw=true)
+![cart-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/cart.png?raw=true)
+![search-filter](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/searchQuery.png?raw=true)
+![shimmer-ui](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/shimmer.png?raw=true)
+![about-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/about.png?raw=true)
 
 ## Getting Started
 
