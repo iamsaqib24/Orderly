@@ -34,12 +34,12 @@ Check out the live demo of Orderly [here](https://orderly-eta.vercel.app/).
 
 ## Demo
 
-![all-restaurants-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/home.png?raw=true)
-![restaurant-menu-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/restaurantMenu.png?raw=true)
-![cart-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/cart.png?raw=true)
-![search-filter](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/searchQuery.png?raw=true)
-![shimmer-ui](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/shimmer.png?raw=true)
-![about-page](https://github.com/iamsaqib24/Orderly/blob/main/src/assets/about.png?raw=true)
+![all-restaurants-page](https://github.com/iamsaqib24/Orderly/assets/96372222/d145bfa1-2673-4841-8b15-e8fead3900fc)
+![restaurant-menu-page](https://github.com/iamsaqib24/Orderly/assets/96372222/66c8bbd2-2905-4e85-9eed-0f0dc46218f3)
+![cart-page](https://github.com/iamsaqib24/Orderly/assets/96372222/4b8ab135-3710-4648-9dd2-80851837ae7b)
+![search-filter](https://github.com/iamsaqib24/Orderly/assets/96372222/b8afa000-01ac-4cfb-a936-e950af6b8794)
+![shimmer-ui](https://github.com/iamsaqib24/Orderly/assets/96372222/9a2dbe1b-4038-47c4-a9c6-8fbfc5595152)
+![about-page](https://github.com/iamsaqib24/Orderly/assets/96372222/93a319fe-2011-4080-9215-413b14e1f38f)
 
 ## Getting Started
 
